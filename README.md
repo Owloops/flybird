@@ -1,2 +1,2 @@
 # owloops-flybird
-Sane defaults and steroids for web automation
+Sane defaults for web automation

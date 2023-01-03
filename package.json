@@ -1,0 +1,114 @@
+{
+  "name": "@owloops/flybird",
+  "version": "0.0.0-semantic-release",
+  "description": "Flybird is a library which provides an API to play Owloops recordings created using Owloops Chrome Recorder](https://github.com/Owloops/owloops-chrome-recorder)",
+  "main": "lib/cjs/main.cjs",
+  "types": "lib/main.d.ts",
+  "bin": "bin/owloops-flybird.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/main.d.ts",
+        "default": "./lib/main.js"
+      },
+      "require": {
+        "types": "./lib/cjs/main.d.cts",
+        "default": "./lib/cjs/main.cjs"
+      }
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "owloops",
+    "testing",
+    "automation",
+    "devtools",
+    "runner"
+  ],
+  "repository": "github:Owloops/owloops-flybird",
+  "scripts": {
+    "test": "jest",
+    "clean": "rimraf lib",
+    "build": "npm run clean && rollup --config rollup.config.cjs"
+  },
+  "files": [
+    "lib",
+    "!lib/**/*.d.ts",
+    "!lib/**/*.d.ts.map",
+    "lib/main.d.ts",
+    "lib/cjs/main.d.cts"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "type": "module",
+  "author": "Owloops",
+  "license": "GPL-3.0-only",
+  "homepage": "https://github.com/Owloops/owloops-flybird#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@rollup/plugin-typescript": "9.0.1",
+    "@types/jest": "^26.0.23",
+    "@types/node-fetch": "^2.6.2",
+    "@types/puppeteer": "^5.4.2",
+    "aws-sdk": "^2.823.0",
+    "jest": "^27.0.4",
+    "landa": "^2.1.7",
+    "puppeteer": "^19.4.1",
+    "@sparticuz/chromium": "109.0.1",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.1.3",
+    "rimraf": "3.0.2",
+    "rollup": "3.2.2",
+    "rollup-plugin-dts": "5.0.0",
+    "ts-node": "10.9.1",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^7.0.4"
+  },
+  "peerDependencies": {
+    "puppeteer": ">=19.4.1",
+    "puppeteer-core": ">=19.4.1",
+    "@sparticuz/chromium": "109.0.1"
+  },
+  "peerDependenciesMeta": {
+    "puppeteer": {
+      "optional": true
+    },
+    "puppeteer-core": {
+      "optional": true
+    },
+    "@sparticuz/chromium": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "ajv": "^8.11.2",
+    "chrono-node": "^2.4.2",
+    "clipboardy": "^3.0.0",
+    "get-urls": "^11.0.0",
+    "node-fetch": "^2.6.1",
+    "number-string": "^1.1.6",
+    "prepend-http": "^3.0.1",
+    "puppeteer-core": "^19.4.1",
+    "puppeteer-extra": "^3.3.4",
+    "puppeteer-extra-plugin-recaptcha": "^3.6.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.1",
+    "zod": "^1.11.11",
+    "cli-table3": "0.6.3",
+    "yargs": "17.6.2",
+    "colorette": "2.0.19"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
+    }
+  }
+}
