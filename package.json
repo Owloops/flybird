@@ -35,8 +35,8 @@
   },
   "files": [
     "lib",
-    "!lib/**/*.d.ts",
-    "!lib/**/*.d.ts.map",
+    "lib/**/*.d.ts",
+    "lib/**/*.d.ts.map",
     "lib/main.d.ts",
     "lib/cjs/main.d.cts"
   ],
