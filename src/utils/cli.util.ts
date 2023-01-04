@@ -118,7 +118,7 @@ export async function runFiles(
     log: true,
     headless: true,
   }
-): Promise<void> {
+): Promise<object[]> {
   const results: Result[] = [];
   for (const file of files) {
     const result: Result = {
@@ -141,8 +141,8 @@ export async function runFiles(
       const object = JSON.parse(content);
 
       const { default: puppeteer } = await import("puppeteer");
-      const runner = await owl({puppeteer, actions: object, headless: Boolean(opts.headless)});
-      result.record = runner;
+      const flyResults = await owl({puppeteer, actions: object, headless: Boolean(opts.headless)});
+      result.record = flyResults;
       opts.log && console.log(`Finished running ${file}`);
     } catch (err) {
       opts.log && console.error(`Error running ${file}`, err);
@@ -159,7 +159,11 @@ export async function runFiles(
     console.log(statusReport.toString());
   }
 
-  if (results.every((result) => result.success)) return;
+  if (results.every((result) => result.success)) {
+    return results.map((result: any) => {
+      return { name: result.title, record: result.record.flyRecord };
+    });
+  }
 
   throw new Error("Some recordings have failed to run.");
 }

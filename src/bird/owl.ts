@@ -5,7 +5,7 @@ import RecaptchaPlugin from "puppeteer-extra-plugin-recaptcha";
 import StealthPlugin from "puppeteer-extra-plugin-stealth";
 import { addExtra, PuppeteerExtra, VanillaPuppeteer } from "puppeteer-extra";
 import { PuppeteerNode, Viewport, Page } from "puppeteer-core";
-import { BirdError, localLogger, prepareBird, validateBird } from "../utils";
+import { BirdError, localLogger, prepareBird, validateBird, asyncCallWithTimeout } from "../utils";
 import { birdActionsData } from "./birdActions";
 
 const BIRD__TIMEOUT_ERROR = `Maximum fly time for a bird exceeded.`;
@@ -114,8 +114,9 @@ export const owl = async ({
   puppeteer.use(recaptcha);
 
   let browser: {
-    close(): unknown; newPage: () => Page | PromiseLike<Page> 
-}, page: Page;
+    close(): Promise<void>; newPage: () => Page | PromiseLike<Page>
+  };
+  let page: Page;
   try {
     browser = await puppeteer.launch({
       args: chromiumArgs,
@@ -169,28 +170,16 @@ export const owl = async ({
 
   recaptcha.onPageCreated(page as any);
   const maxFlyTime = 840 * 1000; // 14 minutes
-  const flyResults: any = await Promise.race([
-    fly({
-      page,
-      auth,
-      actions: injectedBird || [],
-      flyRecord,
-      finalResults,
-      birdActions: birdActions.length > 0 ? birdActions : birdActionsData,
-      birdCredits,
-      logger,
-    }),
-    new Promise((resolve) => {
-      setTimeout(resolve, maxFlyTime, BIRD__TIMEOUT_ERROR);
-    }),
-  ]);
-  if (flyResults === BIRD__TIMEOUT_ERROR) {
-    throw new BirdError({
-      code: "BIRD__TIMEOUT_ERROR",
-      message: `${BIRD__TIMEOUT_ERROR} Maximum fly time is ${maxFlyTime} ms`,
-      data: flyResults,
-    });
-  }
+  const flyResults = await asyncCallWithTimeout(fly({
+    page,
+    auth,
+    actions: injectedBird || [],
+    flyRecord,
+    finalResults,
+    birdActions: birdActions.length > 0 ? birdActions : birdActionsData,
+    birdCredits,
+    logger,
+  }), maxFlyTime, BIRD__TIMEOUT_ERROR);
   await browser?.close();
   return flyResults;
 };
