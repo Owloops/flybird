@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/Owloops/flybird/compare/v1.1.2...v1.1.3) (2023-01-04)
+
+
+### Bug Fixes
+
+* chromium props ([4303e17](https://github.com/Owloops/flybird/commit/4303e1702b024955e4da3fd60b5a7697f827a4a0))
+
 ## [1.1.2](https://github.com/Owloops/flybird/compare/v1.1.1...v1.1.2) (2023-01-04)
 
 
