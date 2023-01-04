@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Owloops/flybird/compare/v1.1.0...v1.1.1) (2023-01-04)
+
+
+### Bug Fixes
+
+* save test results automatically ([94da016](https://github.com/Owloops/flybird/commit/94da01683edbfcd7c62e535032964ffdbd83663b))
+
 # [1.1.0](https://github.com/Owloops/owloops-flybird/compare/v1.0.3...v1.1.0) (2023-01-04)
 
 
