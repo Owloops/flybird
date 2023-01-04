@@ -7,7 +7,6 @@ import { addExtra, PuppeteerExtra, VanillaPuppeteer } from "puppeteer-extra";
 import { PuppeteerNode, Viewport, Page } from "puppeteer-core";
 import { BirdError, localLogger, prepareBird, validateBird, asyncCallWithTimeout } from "../utils";
 import { birdActionsData } from "./birdActions";
-import chromium from "@sparticuz/chromium";
 
 const BIRD__TIMEOUT_ERROR = `Maximum fly time for a bird exceeded.`;
 const PUPPETEER__ERROR_LAUNCHING_WITH_PROXY =
