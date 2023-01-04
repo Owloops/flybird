@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Owloops/owloops-flybird/compare/v1.0.3...v1.1.0) (2023-01-04)
+
+
+### Features
+
+* Run processor tests in CI, End bird after exec, Add bird actions conditional, add save results option for CLI ([42a21cb](https://github.com/Owloops/owloops-flybird/commit/42a21cb9df4db12108fd8d3daea987f29a6101be))
+
 ## [1.0.3](https://github.com/Owloops/owloops-flybird/compare/v1.0.2...v1.0.3) (2023-01-04)
 
 
