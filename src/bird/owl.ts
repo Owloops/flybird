@@ -7,6 +7,7 @@ import { addExtra, PuppeteerExtra, VanillaPuppeteer } from "puppeteer-extra";
 import { PuppeteerNode, Viewport, Page } from "puppeteer-core";
 import { BirdError, localLogger, prepareBird, validateBird, asyncCallWithTimeout } from "../utils";
 import { birdActionsData } from "./birdActions";
+import chromium from "@sparticuz/chromium";
 
 const BIRD__TIMEOUT_ERROR = `Maximum fly time for a bird exceeded.`;
 const PUPPETEER__ERROR_LAUNCHING_WITH_PROXY =
@@ -58,7 +59,7 @@ export const owl = async ({
   ) => any;
   variables?: {};
   chromium?: {
-    executablePath: string;
+    executablePath: (input?: string) => Promise<string>;
     args: string[];
     defaultViewport: Required<Viewport>;
   };
@@ -76,7 +77,7 @@ export const owl = async ({
   ];
 
   let chromiumBin = isLambda
-    ? chromium?.executablePath
+    ? await chromium?.executablePath()
     : puppeteer.executablePath();
   chromiumArgs = isLambda
     ? [...chromiumArgs, "--headless"].concat(chromium?.args || [""])
