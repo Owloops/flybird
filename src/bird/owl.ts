@@ -161,6 +161,7 @@ export const owl = async ({
         data: e,
       });
     }
+    console.error(e);
     throw new BirdError({
       code: "PUPPETEER__ERROR_LAUNCHING_BROWSER",
       message: PUPPETEER__ERROR_LAUNCHING_BROWSER,
