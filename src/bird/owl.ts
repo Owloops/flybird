@@ -58,9 +58,9 @@ export const owl = async ({
   ) => any;
   variables?: {};
   chromium?: {
-    executablePath: (input?: string) => Promise<string>;
-    args: () => string[];
-    defaultViewport: () => Required<Viewport>;
+    executablePath: string;
+    args: string[];
+    defaultViewport: Required<Viewport>;
   };
 }) => {
   const birdData = { skeleton: actions };
@@ -76,10 +76,10 @@ export const owl = async ({
   ];
 
   let chromiumBin = isLambda
-    ? await chromium?.executablePath()
+    ? chromium?.executablePath
     : puppeteer.executablePath();
   chromiumArgs = isLambda
-    ? [...chromiumArgs, "--headless"].concat(chromium?.args() || [""])
+    ? [...chromiumArgs, "--headless"].concat(chromium?.args || [""])
     : chromiumArgs;
   if (proxyString) {
     chromiumArgs.forEach((item, i) => {
@@ -98,7 +98,7 @@ export const owl = async ({
     width: 1280,
   };
   chromiumViewPort = isLambda
-    ? chromium?.defaultViewport() || { height: 720, width: 1280 }
+    ? chromium?.defaultViewport || { height: 720, width: 1280 }
     : chromiumViewPort;
   puppeteer = addExtra(puppeteer as VanillaPuppeteer);
 
