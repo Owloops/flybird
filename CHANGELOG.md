@@ -1,3 +1,11 @@
+## [1.1.5](https://github.com/Owloops/flybird/compare/v1.1.4...v1.1.5) (2023-01-04)
+
+
+### Bug Fixes
+
+* chromium exec path ([0e39ec9](https://github.com/Owloops/flybird/commit/0e39ec9617641b569ce60cadf6575c0012b49e1b))
+* remove unused imports ([aa3f3eb](https://github.com/Owloops/flybird/commit/aa3f3eb11158f1a833c88e702bba878bb748eb0b))
+
 ## [1.1.4](https://github.com/Owloops/flybird/compare/v1.1.3...v1.1.4) (2023-01-04)
 
 
