@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/Owloops/flybird/compare/v1.1.3...v1.1.4) (2023-01-04)
+
+
+### Bug Fixes
+
+* debug launch browser error ([cb7fef0](https://github.com/Owloops/flybird/commit/cb7fef0bcc40aeebac8e8053a5f330e039e69d47))
+
 ## [1.1.3](https://github.com/Owloops/flybird/compare/v1.1.2...v1.1.3) (2023-01-04)
 
 
