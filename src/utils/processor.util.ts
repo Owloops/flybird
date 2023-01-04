@@ -1,3 +1,4 @@
+// @ts-nocheck
 import ns from 'number-string';
 import getUrls from 'get-urls';
 import { ParserType, CompareOperationType } from '../types';

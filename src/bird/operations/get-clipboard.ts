@@ -1,4 +1,4 @@
-import clipboard from "clipboardy";
+import { read } from "clipboardy";
 import { GetClipboardActionType } from "../../types";
 
 export const a_getClipboard = async (
@@ -6,7 +6,7 @@ export const a_getClipboard = async (
   finalResults: any
 ) => {
   try {
-    const clipboardValue = await clipboard.read();
+    const clipboardValue = await read();
     finalResults[options.variableName] = clipboardValue;
   } catch (e) {
     console.error(e);
