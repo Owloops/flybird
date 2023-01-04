@@ -33,6 +33,7 @@ export const owl = async ({
     status: "starting",
     credits_used: 0,
   },
+  birdActions = [],
   finalResults = {},
   birdCredits = {},
   logger = localLogger,
@@ -45,6 +46,7 @@ export const owl = async ({
   proxyString?: string;
   auth?: AuthType;
   flyRecord?: FlyRecordType;
+  birdActions?: any;
   finalResults?: any;
   birdCredits?: { [x: string]: number };
   logger?: (
@@ -174,7 +176,7 @@ export const owl = async ({
       actions: injectedBird || [],
       flyRecord,
       finalResults,
-      birdActions: birdActionsData,
+      birdActions: birdActions.length > 0 ? birdActions : birdActionsData,
       birdCredits,
       logger,
     }),
