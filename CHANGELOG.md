@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/Owloops/flybird/compare/v1.1.5...v1.1.6) (2023-01-04)
+
+
+### Bug Fixes
+
+* cleanup package json ([b58dc20](https://github.com/Owloops/flybird/commit/b58dc206301d73e1fc84843b98ab1f4132b39faa))
+
 ## [1.1.5](https://github.com/Owloops/flybird/compare/v1.1.4...v1.1.5) (2023-01-04)
 
 
