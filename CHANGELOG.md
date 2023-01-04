@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/Owloops/flybird/compare/v1.1.1...v1.1.2) (2023-01-04)
+
+
+### Bug Fixes
+
+* revert get-urls and clipboardy to cjs modules ([20117b5](https://github.com/Owloops/flybird/commit/20117b527b0e12d732d3e71f34370ee8eb735089))
+
 ## [1.1.1](https://github.com/Owloops/flybird/compare/v1.1.0...v1.1.1) (2023-01-04)
 
 
