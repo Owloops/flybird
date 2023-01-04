@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/Owloops/owloops-flybird/compare/v1.0.2...v1.0.3) (2023-01-04)
+
+
+### Bug Fixes
+
+* add aws-sdk in deps ([7373035](https://github.com/Owloops/owloops-flybird/commit/73730355a9c60e0ed2efb99a530926549e397dc7))
+
 ## [1.0.2](https://github.com/Owloops/owloops-flybird/compare/v1.0.1...v1.0.2) (2023-01-04)
 
 
