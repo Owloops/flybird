@@ -23,11 +23,11 @@ export const a_getHtml = async (
       }-${new Date().getTime()}.html`
     );
   } else {
-    if (!existsSync('./html')){
-      mkdirSync('./html');
+    if (!existsSync('./flybird-html')){
+      mkdirSync('./flybird-html');
     }
-    writeFileSync(`html/${crypto.randomUUID()}.html`, htmlContent);
-    s3Url = `html/${crypto.randomUUID()}.html`;
+    writeFileSync(`flybird-html/${crypto.randomUUID()}.html`, htmlContent);
+    s3Url = `flybird-html/${crypto.randomUUID()}.html`;
   }
 
   finalResults[options.fileName] = s3Url;

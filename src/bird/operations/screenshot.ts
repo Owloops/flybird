@@ -13,10 +13,10 @@ export const a_screenshot = async (
   flyRecordId: string
 ) => {
   await waitForTimeout(1000);
-  const localScreenPath = `screenshot/${crypto.randomUUID()}.jpeg`;
+  const localScreenPath = `flybird-screenshot/${crypto.randomUUID()}.jpeg`;
   if (!isLambda) {
-    if (!existsSync('./screenshot')){
-      mkdirSync('./screenshot');
+    if (!existsSync('./flybird-screenshot')){
+      mkdirSync('./flybird-screenshot');
     }
   }
   let screenshot = await page.screenshot({

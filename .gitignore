@@ -105,8 +105,8 @@ dist
 
 lib
 
-html
-screenshot
-results
+flybird-html
+flybird-screenshot
+flybird-results
 
 .DS_Store

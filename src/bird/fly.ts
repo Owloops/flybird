@@ -472,13 +472,13 @@ export const fly = async ({
         const body = await page.content();
 
         if (!isLambda) {
-          if (!existsSync('./screenshot')){
-            mkdirSync('./screenshot');
+          if (!existsSync('./flybird-screenshot')){
+            mkdirSync('./flybird-screenshot');
           }
-          if (!existsSync('./html')){
-            mkdirSync('./html');
+          if (!existsSync('./flybird-html')){
+            mkdirSync('./flybird-html');
           }
-          writeFileSync(`./html/${crypto.randomUUID()}.html`, body);
+          writeFileSync(`./flybird-html/${crypto.randomUUID()}.html`, body);
         }
 
         const crashScreenshot =
@@ -488,7 +488,7 @@ export const fly = async ({
               encoding: "binary",
               type: "jpeg",
               quality: 90,
-              path: !isLambda ? `screenshot/${crypto.randomUUID()}.jpeg` : undefined
+              path: !isLambda ? `flybird-screenshot/${crypto.randomUUID()}.jpeg` : undefined
             })
             .catch((err) => console.error('Failed screenshot', err)));
 

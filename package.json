@@ -27,11 +27,11 @@
     "devtools",
     "runner"
   ],
-  "repository": "github:Owloops/owloops-flybird",
+  "repository": "github:Owloops/flybird",
   "scripts": {
     "test": "mocha --config .mocharc.cjs",
     "clean": "rimraf lib",
-    "build": "npm run clean && rollup --config rollup.config.cjs"
+    "build": "yarn clean && rollup --config rollup.config.cjs"
   },
   "files": [
     "lib",
@@ -46,29 +46,29 @@
   "type": "module",
   "author": "Owloops",
   "license": "GPL-3.0-only",
-  "homepage": "https://github.com/Owloops/owloops-flybird#readme",
+  "homepage": "https://github.com/Owloops/flybird#readme",
   "devDependencies": {
     "@rollup/plugin-typescript": "9.0.1",
     "@sparticuz/chromium": "109.0.1",
-    "@types/mocha": "10.0.0",
     "@types/chai": "4.3.3",
+    "@types/mocha": "10.0.0",
     "@types/node": "^18.11.18",
     "@types/node-fetch": "^2.6.2",
     "@types/puppeteer": "^5.4.2",
+    "@types/yargs": "^17.0.19",
+    "chai": "4.3.6",
     "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^7.0.4",
     "landa": "^2.1.7",
+    "mocha": "10.1.0",
     "puppeteer": "^19.4.1",
     "rimraf": "3.0.2",
     "rollup": "3.2.2",
     "rollup-plugin-dts": "5.0.0",
     "ts-node": "10.9.1",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^4.1.3",
-    "mocha": "10.1.0",
-    "chai": "4.3.6"
-
+    "typescript": "^4.1.3"
   },
   "peerDependencies": {
     "@sparticuz/chromium": "109.0.1",
@@ -97,7 +97,7 @@
     "node-fetch": "^2.6.1",
     "number-string": "^1.1.6",
     "prepend-http": "^3.0.1",
-    "puppeteer-core": "^19.4.1",
+    "puppeteer-core": ">=19.4.1",
     "puppeteer-extra": "^3.3.4",
     "puppeteer-extra-plugin-recaptcha": "^3.6.6",
     "puppeteer-extra-plugin-stealth": "^2.11.1",

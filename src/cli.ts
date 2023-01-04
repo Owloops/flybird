@@ -11,6 +11,7 @@ interface Arguments {
   headless?: string;
 }
 
+// @ts-ignore
 async function confirm(question: string) {
   const line = readline.createInterface({
     input: process.stdin,
@@ -25,16 +26,12 @@ async function confirm(question: string) {
   });
 }
 
-async function handleRemove(results: object[]) {
-  const confirmed = await confirm(`Save results? [Y/n]`);
-
-  if (confirmed) {
-    if (!existsSync("./results")) {
-      mkdirSync("./results");
-    }
-    const JSONResults = JSON.stringify(results, null, 2);
-    writeFileSync(`results/${crypto.randomUUID()}.json`, JSONResults);
+async function handleResults(results: object[]) {
+  if (!existsSync("./flybird-results")) {
+    mkdirSync("./flybird-results");
   }
+  const JSONResults = JSON.stringify(results, null, 2);
+  writeFileSync(`flybird-results/${crypto.randomUUID()}.json`, JSONResults);
 }
 
 yargs(hideBin(process.argv))
@@ -53,7 +50,7 @@ yargs(hideBin(process.argv))
         ),
         extension: args.extension,
       });
-      await handleRemove(results);
+      await handleResults(results);
     }
   )
   .option("headless", {
