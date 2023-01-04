@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Owloops/owloops-flybird/compare/v1.0.1...v1.0.2) (2023-01-04)
+
+
+### Bug Fixes
+
+* added bird actions ([3d27f0f](https://github.com/Owloops/owloops-flybird/commit/3d27f0f90bdc3a8ca1ba412e63e8e1ac40fc570a))
+
 ## [1.0.1](https://github.com/Owloops/owloops-flybird/compare/v1.0.0...v1.0.1) (2023-01-03)
 
 
