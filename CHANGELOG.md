@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/Owloops/flybird/compare/v1.1.6...v1.1.7) (2023-01-05)
+
+
+### Bug Fixes
+
+* added readme API doc ([ed25381](https://github.com/Owloops/flybird/commit/ed25381c8d564e53ad3738b972c9d3b5a9a96883))
+
 ## [1.1.6](https://github.com/Owloops/flybird/compare/v1.1.5...v1.1.6) (2023-01-04)
 
 
