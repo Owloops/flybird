@@ -11,6 +11,9 @@ This repo provides tools to replay Owloops Tests exported from [Google Chrome De
 Install [Owloops Chrome Recorder extension](https://github.com/Owloops/owloops-chrome-recorder-extension) if you want to export the recordings directly from the Chrome DevTools' Recorder UI.
 
 Refer to all the supported actions at [Owloops API documentation](https://owloops.readme.io/reference/goto)
+
+[![asciicast](https://asciinema.org/a/549630.svg)](https://asciinema.org/a/549630)
+
 ## Installation
 
 Install @owloops/flybird with npm
