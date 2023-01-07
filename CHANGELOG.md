@@ -1,3 +1,11 @@
+## [1.1.8](https://github.com/Owloops/flybird/compare/v1.1.7...v1.1.8) (2023-01-07)
+
+
+### Bug Fixes
+
+* condition action ([21a05c1](https://github.com/Owloops/flybird/commit/21a05c13c5147c3d4689a38852923e812b4a635d))
+* release ([d04e16d](https://github.com/Owloops/flybird/commit/d04e16dfeccc47337369424b2d29dddb688f4864))
+
 ## [1.1.7](https://github.com/Owloops/flybird/compare/v1.1.6...v1.1.7) (2023-01-05)
 
 
