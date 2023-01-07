@@ -19,10 +19,10 @@ jobs:
           node-version: 16.x
 
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --frozen-lockfile
 
       - name: Install semantic-release extra plugins
-        run: yarn add -D @semantic-release/changelog @semantic-release/git
+        run: yarn add -D @semantic-release/changelog @semantic-release/git semantic-release@19.0.5
 
       - name: Build
         run: yarn build
