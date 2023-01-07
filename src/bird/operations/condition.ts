@@ -48,6 +48,7 @@ export const a_condition = async (
     finalResults,
     birdActions,
     birdCredits,
+    logger
   });
   finalResults = conditionFlyResults.finalResults;
   flyRecord = conditionFlyResults.flyRecord;
