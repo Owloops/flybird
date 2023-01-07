@@ -94,7 +94,7 @@ export const a_getTitle = async (
   finalResults[options.variableName] = await page.title();
 };
 
-export const a_getUrl = async (
+export const a_getUrl = (
   page: Page,
   options: GetUrlActionType["options"],
   finalResults: any

@@ -183,7 +183,7 @@ export const fly = async ({
             flyRecord,
             birdCredits
           );
-          await a_getUrl(page, action?.options, finalResults);
+          a_getUrl(page, action?.options, finalResults);
           break;
 
         case "get-title":
