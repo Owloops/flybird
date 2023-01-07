@@ -1,3 +1,10 @@
+## [1.1.9](https://github.com/Owloops/flybird/compare/v1.1.8...v1.1.9) (2023-01-07)
+
+
+### Bug Fixes
+
+* get-url action ([cfbd24b](https://github.com/Owloops/flybird/commit/cfbd24b9d856b0e6f8f7adcb1b11a5caf0267e1c))
+
 ## [1.1.8](https://github.com/Owloops/flybird/compare/v1.1.7...v1.1.8) (2023-01-07)
 
 
