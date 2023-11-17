@@ -141,7 +141,7 @@ export async function runFiles(
       const object = JSON.parse(content);
 
       const { default: puppeteer } = await import("puppeteer");
-      const flyResults = await owl({puppeteer, actions: object, headless: Boolean(opts.headless)});
+      const flyResults = await owl({puppeteer, actions: object, headless: opts.headless});
       result.record = flyResults;
       opts.log && console.log(`Finished running ${file}`);
     } catch (err) {
