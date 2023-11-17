@@ -1,6 +1,5 @@
 // @ts-nocheck
 import ns from 'number-string';
-// import getUrls from 'get-urls';
 import { ParserType, CompareOperationType } from '../types';
 import * as chrono from 'chrono-node';
 import { ElementHandle, Page } from 'puppeteer-core';
