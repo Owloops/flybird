@@ -1,7 +1,6 @@
 
 ![Logo](https://i.imgur.com/SCSk0rX.png)
 
-
 # @owloops/flybird
 
 [![npm version](https://img.shields.io/npm/v/@owloops/flybird)](https://www.npmjs.com/package/@owloops/flybird) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
@@ -21,12 +20,13 @@ Install @owloops/flybird with npm
 ```bash
   npm install -g @owloops/flybird
 ```
-    
+
 To replay recordings using Puppeteer, install Puppeteer as well:
 
-```
+```bash
   npm install -g puppeteer
 ```
+
 ## Usage
 
 ### Via CLI
@@ -35,7 +35,7 @@ Download this [example recording](examples/aiprinted.json) and save it as `recor
 
 Using CLI + npx:
 
-```
+```bash
 npx @owloops/flybird recording.json
 ```
 
@@ -123,6 +123,7 @@ const testResults = await owl({
 
 return testResults;
 ```
+
 ## License
 
 [![license](https://img.shields.io/badge/License-GNU%20GPLv3-blue.svg)](https://github.com/Owloops/flybird/blob/master/LICENSE)
