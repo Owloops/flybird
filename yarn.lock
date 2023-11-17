@@ -2205,6 +2205,11 @@
   resolved "https://registry.npmjs.org/@types/strip-json-comments/-/strip-json-comments-0.0.30.tgz"
   integrity sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==
 
+"@types/url-regex-safe@^4.0.0":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@types/url-regex-safe/-/url-regex-safe-1.0.2.tgz#67a726ef4c26643ecf189926b8dfd101bbcdcf95"
+  integrity sha512-Ro+qmzg7SomSd4uHMCPzv0JwXtAK0gMnB0CvnFErTGFFw+Lndzt1RZS/Yj2yzrdv4h5SZPohdGPA6q/F0TUacw==
+
 "@types/yargs-parser@*":
   version "21.0.0"
   resolved "https://registry.npmjs.org/@types/yargs-parser/-/yargs-parser-21.0.0.tgz"
@@ -2765,6 +2770,13 @@ clone-deep@^0.2.4:
     lazy-cache "^1.0.3"
     shallow-clone "^0.1.2"
 
+clone-regexp@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/clone-regexp/-/clone-regexp-3.0.0.tgz#c6dd5c6b85482306778f3dc4ac2bb967079069c2"
+  integrity sha512-ujdnoq2Kxb8s3ItNBtnYeXdm07FcU0u8ARAT1lQ2YdMwQC+cdiXX8KoqMVuglztILivceTtp4ivqGSmEmhBUJw==
+  dependencies:
+    is-regexp "^3.0.0"
+
 clone@^1.0.2:
   version "1.0.4"
   resolved "https://registry.npmjs.org/clone/-/clone-1.0.4.tgz"
@@ -2860,6 +2872,11 @@ conventional-commit-types@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/conventional-commit-types/-/conventional-commit-types-3.0.0.tgz"
   integrity sha512-SmmCYnOniSsAa9GqWOeLqc179lfr5TRu5b4QFDkbsrJ5TZjPJx85wtOr3zn+1dbeNiXDKGPbZ72IKbPhLXh/Lg==
+
+convert-hrtime@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/convert-hrtime/-/convert-hrtime-5.0.0.tgz#f2131236d4598b95de856926a67100a0a97e9fa3"
+  integrity sha512-lOETlkIeYSJWcbbcvjRKGxVMXJR+8+OQb/mTPbA4ObPMytYIsUbuOE0Jzy60hjARYszq1id0j8KgVhC+WGZVTg==
 
 convert-source-map@^1.7.0:
   version "1.7.0"
@@ -3476,6 +3493,11 @@ function-bind@^1.1.1:
   resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
+function-timeout@^0.1.0:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/function-timeout/-/function-timeout-0.1.1.tgz#6bf71d3d24c894d43b2bec312cabb8c5add2e9da"
+  integrity sha512-0NVVC0TaP7dSTvn1yMiy6d6Q8gifzbvQafO46RtLG/kHJUBNd+pVRGOBoK44wNBvtSPUJRfdVvkFdD3p0xvyZg==
+
 gauge@^4.0.3:
   version "4.0.4"
   resolved "https://registry.npmjs.org/gauge/-/gauge-4.0.4.tgz"
@@ -3820,7 +3842,7 @@ install-artifact-from-github@^1.3.1:
   resolved "https://registry.npmjs.org/install-artifact-from-github/-/install-artifact-from-github-1.3.2.tgz"
   integrity sha512-yCFcLvqk0yQdxx0uJz4t9Z3adDMLAYrcGYv546uRXCSvxE+GqNYhhz/KmrGcUKGI/gVLR9n/e/zM9jX/+ASMJQ==
 
-ip-regex@^4.3.0:
+ip-regex@4.3.0, ip-regex@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/ip-regex/-/ip-regex-4.3.0.tgz#687275ab0f57fa76978ff8f4dddc8a23d5990db5"
   integrity sha512-B9ZWJxHHOHUhUjCPrMpLD4xEq35bUTClHM1S6CBU5ixQnkZmwipwgc96vAd7AAGM9TGHvJR+Uss+/Ak6UphK+Q==
@@ -3938,6 +3960,11 @@ is-reference@^1.2.1:
   integrity sha512-U82MsXXiFIrjCK4otLT+o2NA2Cd2g5MLoOVXUZjIOhLurrRxpEXzI8O0KZHr3IjLvlAH1kTPYSuqer5T9ZVBKQ==
   dependencies:
     "@types/estree" "*"
+
+is-regexp@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/is-regexp/-/is-regexp-3.1.0.tgz#0235eab9cda5b83f96ac4a263d8c32c9d5ad7422"
+  integrity sha512-rbku49cWloU5bSMI+zaRaXdQHXnthP6DZ/vLnfdSKyL4zUzuWnomtOEiZZOd+ioQ+avFo/qau3KPTc7Fjy1uPA==
 
 is-stream@^1.1.0:
   version "1.1.0"
@@ -4557,6 +4584,11 @@ normalize-url@^5.1.0:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-5.3.1.tgz#c8485c0f5ba2f9c17a6d2907b56117ae5967f882"
   integrity sha512-K1c7+vaAP+Yh5bOGmA10PGPpp+6h7WZrl7GwqKhUflBc9flU9pzG27DDeB9+iuhZkE3BJZOcgN1P/2sS5pqrWw==
+
+normalize-url@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-8.0.0.tgz#593dbd284f743e8dcf6a5ddf8fadff149c82701a"
+  integrity sha512-uVFpKhj5MheNBJRTiMZ9pE/7hD1QTeEvugSJW/OmLzAp78PB5O6adfMNTvmfKhXBkvCzC+rqifWcVYpGFwTjnw==
 
 npm-run-path@^2.0.0:
   version "2.0.2"
@@ -5520,6 +5552,15 @@ strnum@^1.0.5:
   resolved "https://registry.yarnpkg.com/strnum/-/strnum-1.0.5.tgz#5c4e829fe15ad4ff0d20c3db5ac97b73c9b072db"
   integrity sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA==
 
+super-regex@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/super-regex/-/super-regex-0.2.0.tgz#dc1e071e55cdcf56930eb6271f73653a655b2642"
+  integrity sha512-WZzIx3rC1CvbMDloLsVw0lkZVKJWbrkJ0k1ghKFmcnPrW1+jWbgTkTEWVtD9lMdmI4jZEz40+naBxl1dCUhXXw==
+  dependencies:
+    clone-regexp "^3.0.0"
+    function-timeout "^0.1.0"
+    time-span "^5.1.0"
+
 supports-color@8.1.1:
   version "8.1.1"
   resolved "https://registry.npmjs.org/supports-color/-/supports-color-8.1.1.tgz"
@@ -5593,6 +5634,13 @@ through@^2.3.6, through@^2.3.8:
   resolved "https://registry.npmjs.org/through/-/through-2.3.8.tgz"
   integrity sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
 
+time-span@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/time-span/-/time-span-5.1.0.tgz#80c76cf5a0ca28e0842d3f10a4e99034ce94b90d"
+  integrity sha512-75voc/9G4rDIJleOo4jPvN4/YC4GRZrY8yy1uU4lwrB3XEQbWve8zXoO5No4eFrGcTAMYyoY67p8jRQdtA1HbA==
+  dependencies:
+    convert-hrtime "^5.0.0"
+
 tiny-lru@^7.0.0:
   version "7.0.6"
   resolved "https://registry.npmjs.org/tiny-lru/-/tiny-lru-7.0.6.tgz"
@@ -5602,6 +5650,11 @@ tlds@^1.217.0:
   version "1.236.0"
   resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.236.0.tgz#a118eebe33261c577e3a3025144faeabb7dd813c"
   integrity sha512-oP2PZ3KeGlgpHgsEfrtva3/K9kzsJUNliQSbCfrJ7JMCWFoCdtG+9YMq/g2AnADQ1v5tVlbtvKJZ4KLpy/P6MA==
+
+tlds@^1.242.0:
+  version "1.245.0"
+  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.245.0.tgz#afd4c0c33be7227f8f2d4578573fc922b839ba84"
+  integrity sha512-fbSQFQr8f41/e9q9IoKKVv7CUFvvE3TVJo7m0JQJZcf7jOOXRRf9DIP4Uf04aovYGKG686OvtV4ZrNY1bOz3aA==
 
 tmp@^0.0.33:
   version "0.0.33"
@@ -5797,6 +5850,14 @@ url-regex-safe@^2.0.2:
     ip-regex "^4.3.0"
     re2 "^1.16.0"
     tlds "^1.217.0"
+
+url-regex-safe@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/url-regex-safe/-/url-regex-safe-4.0.0.tgz#2ac972bfc012e6ab1363d8f3f1c540145b64e15e"
+  integrity sha512-BrnFCWKNFrFnRzKD66NtJqQepfJrUHNPvPxE5y5NSAhXBb4OlobQjt7907Jm4ItPiXaeX+dDWMkcnOd4jR9N8A==
+  dependencies:
+    ip-regex "4.3.0"
+    tlds "^1.242.0"
 
 util-deprecate@^1.0.1:
   version "1.0.2"
