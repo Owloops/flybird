@@ -41,7 +41,7 @@ export function getRecordingPaths(
 
 export function getHeadlessEnvVar(headless?: string) {
   if (!headless) {
-    return true;
+    return "new";
   }
   switch (headless.toLowerCase()) {
     case "1":
@@ -116,7 +116,7 @@ export async function runFiles(
   files: string[],
   opts: { log: boolean; headless: boolean | "new"; extension?: string } = {
     log: true,
-    headless: true,
+    headless: "new",
   }
 ): Promise<object[]> {
   const results: Result[] = [];
