@@ -1,3 +1,10 @@
+## [1.1.17](https://github.com/Owloops/flybird/compare/v1.1.16...v1.1.17) (2023-11-17)
+
+
+### Bug Fixes
+
+* normalize-url ([b9ebf0f](https://github.com/Owloops/flybird/commit/b9ebf0f56f2835df3cfaf24ed6a21c737771aea5))
+
 ## [1.1.16](https://github.com/Owloops/flybird/compare/v1.1.15...v1.1.16) (2023-11-17)
 
 
