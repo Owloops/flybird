@@ -1,3 +1,10 @@
+## [1.1.10](https://github.com/Owloops/flybird/compare/v1.1.9...v1.1.10) (2023-11-17)
+
+
+### Bug Fixes
+
+* outdated sdk, new headless ([2bc57a6](https://github.com/Owloops/flybird/commit/2bc57a6260d55e23102a21547f0dfddf4eb6fab9))
+
 ## [1.1.9](https://github.com/Owloops/flybird/compare/v1.1.8...v1.1.9) (2023-01-07)
 
 
