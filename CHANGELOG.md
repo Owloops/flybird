@@ -1,3 +1,10 @@
+## [1.1.19](https://github.com/Owloops/flybird/compare/v1.1.18...v1.1.19) (2023-11-17)
+
+
+### Bug Fixes
+
+* upgrade puppeteer ([9c89907](https://github.com/Owloops/flybird/commit/9c899075f919c827640d0780f6cf53b5d676fbc7))
+
 ## [1.1.18](https://github.com/Owloops/flybird/compare/v1.1.17...v1.1.18) (2023-11-17)
 
 
