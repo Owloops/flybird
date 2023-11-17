@@ -1,3 +1,10 @@
+## [1.1.14](https://github.com/Owloops/flybird/compare/v1.1.13...v1.1.14) (2023-11-17)
+
+
+### Bug Fixes
+
+* remove old aws-sdk ([587811a](https://github.com/Owloops/flybird/commit/587811a75cc8d4f78ace90b5ae5482bfc997ed06))
+
 ## [1.1.13](https://github.com/Owloops/flybird/compare/v1.1.12...v1.1.13) (2023-11-17)
 
 
