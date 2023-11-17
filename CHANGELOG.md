@@ -1,3 +1,10 @@
+## [1.1.12](https://github.com/Owloops/flybird/compare/v1.1.11...v1.1.12) (2023-11-17)
+
+
+### Bug Fixes
+
+* package.json repository field ([68a9bdc](https://github.com/Owloops/flybird/commit/68a9bdc6ef1dab8ae94177da31180c06eef1debe))
+
 ## [1.1.11](https://github.com/Owloops/flybird/compare/v1.1.10...v1.1.11) (2023-11-17)
 
 
