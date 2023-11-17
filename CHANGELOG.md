@@ -1,3 +1,10 @@
+## [1.1.20](https://github.com/Owloops/flybird/compare/v1.1.19...v1.1.20) (2023-11-17)
+
+
+### Bug Fixes
+
+* add sample recording ([879ae22](https://github.com/Owloops/flybird/commit/879ae22c2af55267a5e5516c5fe982bb01e640fd))
+
 ## [1.1.19](https://github.com/Owloops/flybird/compare/v1.1.18...v1.1.19) (2023-11-17)
 
 
