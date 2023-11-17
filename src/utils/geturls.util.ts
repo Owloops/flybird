@@ -1,5 +1,6 @@
+// https://github.com/sindresorhus/get-urls
 import urlRegex from "url-regex-safe";
-import normalizeUrl from "normalize-url";
+import { normalizeUrl } from '../utils';
 import { isMatch, matches } from "super-regex";
 
 const getUrlsFromQueryParameters = (url: string) => {

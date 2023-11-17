@@ -10,3 +10,4 @@ export * from './crypto.util';
 export * from './other.util';
 export * from './cli.util';
 export * from './geturls.util'
+export * from './normalizeurl.util'
