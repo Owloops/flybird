@@ -1,3 +1,10 @@
+## [1.1.18](https://github.com/Owloops/flybird/compare/v1.1.17...v1.1.18) (2023-11-17)
+
+
+### Bug Fixes
+
+* geturls flybird ver ([8f48b78](https://github.com/Owloops/flybird/commit/8f48b789b639e3fa824b6a171670668152cebea9))
+
 ## [1.1.17](https://github.com/Owloops/flybird/compare/v1.1.16...v1.1.17) (2023-11-17)
 
 
