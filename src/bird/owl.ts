@@ -16,7 +16,7 @@ const PUPPETEER__ERROR_LAUNCHING_BROWSER =
 export const owl = async ({
   puppeteer,
   actions,
-  headless = true,
+  headless = "new",
   proxyString,
   auth,
   flyRecord = {
@@ -42,7 +42,7 @@ export const owl = async ({
 }: {
   puppeteer: PuppeteerNode | PuppeteerExtra | any;
   actions: ActionType[];
-  headless?: boolean;
+  headless?: boolean | string;
   proxyString?: string;
   auth?: AuthType;
   flyRecord?: FlyRecordType;
