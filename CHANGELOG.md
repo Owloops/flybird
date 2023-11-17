@@ -1,3 +1,10 @@
+## [1.1.11](https://github.com/Owloops/flybird/compare/v1.1.10...v1.1.11) (2023-11-17)
+
+
+### Bug Fixes
+
+* release ([00cd9a0](https://github.com/Owloops/flybird/commit/00cd9a054a990f2202e1531023b9e39bd1adeb61))
+
 ## [1.1.10](https://github.com/Owloops/flybird/compare/v1.1.9...v1.1.10) (2023-11-17)
 
 
