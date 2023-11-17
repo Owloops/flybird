@@ -1,3 +1,10 @@
+## [1.1.15](https://github.com/Owloops/flybird/compare/v1.1.14...v1.1.15) (2023-11-17)
+
+
+### Bug Fixes
+
+* boolean new ([904a16f](https://github.com/Owloops/flybird/commit/904a16f26271e1c21a6cc3f0f2f90d840877b8f1))
+
 ## [1.1.14](https://github.com/Owloops/flybird/compare/v1.1.13...v1.1.14) (2023-11-17)
 
 
