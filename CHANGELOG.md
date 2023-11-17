@@ -1,3 +1,11 @@
+## [1.1.16](https://github.com/Owloops/flybird/compare/v1.1.15...v1.1.16) (2023-11-17)
+
+
+### Bug Fixes
+
+* geturls dependency ([f28e2a9](https://github.com/Owloops/flybird/commit/f28e2a94b938f5cfaaa053f3429fa80dacdf30d2))
+* update yarn lock ([fbd38a2](https://github.com/Owloops/flybird/commit/fbd38a2d4ac339ecc4346ef72aa0ea9b48853bc9))
+
 ## [1.1.15](https://github.com/Owloops/flybird/compare/v1.1.14...v1.1.15) (2023-11-17)
 
 
