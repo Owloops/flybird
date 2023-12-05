@@ -1,3 +1,10 @@
+## [1.1.21](https://github.com/Owloops/flybird/compare/v1.1.20...v1.1.21) (2023-12-05)
+
+
+### Bug Fixes
+
+* max fly time 5 minutes ([0132e97](https://github.com/Owloops/flybird/commit/0132e973c4b6b399fe838187dd3bf359a5fb9c81))
+
 ## [1.1.20](https://github.com/Owloops/flybird/compare/v1.1.19...v1.1.20) (2023-11-17)
 
 
