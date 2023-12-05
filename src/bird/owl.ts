@@ -170,7 +170,7 @@ export const owl = async ({
   }
 
   recaptcha.onPageCreated(page as any);
-  const maxFlyTime = 840 * 1000; // 14 minutes
+  const maxFlyTime = 300 * 1000; // 5 minutes
   const flyResults = await asyncCallWithTimeout(fly({
     page,
     auth,
