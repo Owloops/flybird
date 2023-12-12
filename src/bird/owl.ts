@@ -77,10 +77,10 @@ export const owl = async ({
     case "slow":
       slowMo = 100;
       break;
-    case "very slow":
+    case "very_slow":
       slowMo = 250;
       break;
-    case "extremely slow":
+    case "extremely_slow":
       slowMo = 500;
       break;
     default:
