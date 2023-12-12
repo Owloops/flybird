@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/Owloops/flybird/compare/v1.2.1...v1.2.2) (2023-12-12)
+
+
+### Bug Fixes
+
+* pptr launch errors ([804d85d](https://github.com/Owloops/flybird/commit/804d85d57bc9d63ad76fef03ccc86d1fdfa48b13))
+
 ## [1.2.1](https://github.com/Owloops/flybird/compare/v1.2.0...v1.2.1) (2023-12-12)
 
 
