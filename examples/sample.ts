@@ -7,6 +7,7 @@ import puppeteer from "puppeteer";
   await owl({
     headless: false,
     puppeteer,
+    proxyString: "u:p@139.5.73.71:8080",
     actions: [
       {
         action: "set-viewport",

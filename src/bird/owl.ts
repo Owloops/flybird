@@ -109,6 +109,7 @@ export const owl = async ({
     });
     const [credential, proxyStr] = proxyString.split("@");
     if (credential && proxyStr) {
+      console.log(`Proxy: ${proxyStr || credential}`);
       chromiumArgs.push(`--proxy-server=${proxyStr || credential}`);
     }
   }
@@ -179,14 +180,24 @@ export const owl = async ({
       throw new BirdError({
         code: "PUPPETEER__ERROR_LAUNCHING_WITH_PROXY",
         message: PUPPETEER__ERROR_LAUNCHING_WITH_PROXY,
-        data: e,
+        data: {
+          flyRecord,
+          screenshot: '',
+          html: '',
+          finalResults,
+        },
       });
     }
     console.error(e);
     throw new BirdError({
       code: "PUPPETEER__ERROR_LAUNCHING_BROWSER",
       message: PUPPETEER__ERROR_LAUNCHING_BROWSER,
-      data: e,
+      data: {
+        flyRecord,
+        screenshot: '',
+        html: '',
+        finalResults,
+      },
     });
   }
 
