@@ -1,111 +1,62 @@
+// node --loader ts-node/esm examples/sample.ts
+
 import { owl } from "../src/bird";
 import puppeteer from "puppeteer";
 
 (async () => {
-    await owl({
-        headless: false,
-        puppeteer,
-        actions: [
-        {
-            "action": "set-viewport",
-            "options": {
-                "width": 1374,
-                "height": 397
-            }
+  await owl({
+    headless: false,
+    puppeteer,
+    actions: [
+      {
+        action: "set-viewport",
+        options: {
+          width: 1374,
+          height: 439,
         },
-        {
-            "action": "goto",
-            "options": {
-                "url": "https://aiprinted.art/"
-            }
+      },
+      {
+        action: "goto",
+        options: {
+          url: "https://duckduckgo.com/?atb=v298-1",
         },
-        {
-            "action": "wait",
-            "options": {
-                "for": "time",
-                "time": 5000,
-            }
+      },
+      {
+        action: "click",
+        options: {
+          querySelector: "#searchbox_input",
+          rightClick: false,
+          preferredSelector: "querySelector",
+          xpathSelector: 'xpath///*[@id="searchbox_input"]',
+          offsetX: 397.8182067871094,
+          offsetY: 16.022735595703125,
         },
-        {
-            "action": "condition",
-            "options": {
-                "condition": {
-                    "querySelector": ".recommendation-modal__close-button",
-                    "compareOperation": "Element Exists"
-                },
-                "ifTrue": [{
-                    "action": "click",
-                    "options": {
-                        "querySelector": ".recommendation-modal__close-button"
-                    }
-                }],
-                "ifFalse": [{
-                    "action": "end-bird",
-                    "options": {
-                        "conclusion": "done"
-                    }
-                }]
-            }
+      },
+      {
+        action: "input",
+        options: {
+          querySelector: "#searchbox_input",
+          preferredSelector: "querySelector",
+          type: "input",
+          value: "owloops",
+          xpathSelector: 'xpath///*[@id="searchbox_input"]',
         },
-        {
-            "action": "wait",
-            "options": {
-                "for": "time",
-                "time": 3000,
-            }
+      },
+      {
+        action: "enter",
+        options: {},
+      },
+      {
+        action: "click",
+        options: {
+          querySelector: "li:nth-of-type(1) div.ikg2IXiCD14iVX7AdZo1 span",
+          rightClick: false,
+          preferredSelector: "querySelector",
+          xpathSelector: 'xpath///*[@data-testid="result-title-a"]/span',
+          offsetX: 173.09375,
+          offsetY: 10.765625,
         },
-        {
-            "action": "click",
-            "options": {
-                "offsetX": 121.73153686523438,
-                "offsetY": 18.086654663085938,
-                "rightClick": false,
-                "ariaSelector": "aria/Text to Product AI generator",
-                "querySelector": "#Search-In-Template",
-                "xpathSelector": "xpath///*[@id=\"Search-In-Template\"]",
-                "preferredSelector": "ariaSelector"
-            }
-        },
-        {
-            "action": "input",
-            "options": {
-                "type": "input",
-                "value": "cute",
-                "ariaSelector": "aria/Text to Product AI generator",
-                "querySelector": "#Search-In-Template",
-                "xpathSelector": "xpath///*[@id=\"Search-In-Template\"]",
-                "preferredSelector": "querySelector"
-            }
-        },
-        {
-            "action": "click",
-            "options": {
-                "offsetX": 53.4261474609375,
-                "offsetY": 24.086654663085938,
-                "rightClick": false,
-                "ariaSelector": "aria/Hoodie",
-                "querySelector": "#product_dropdown_input",
-                "xpathSelector": "xpath///*[@id=\"product_dropdown_input\"]",
-                "preferredSelector": "querySelector"
-            }
-        },
-        {
-            "action": "input",
-            "options": {
-                "type": "input",
-                "value": "Canvas",
-                "ariaSelector": "aria/Hoodie",
-                "querySelector": "#product_dropdown_input",
-                "xpathSelector": "xpath///*[@id=\"product_dropdown_input\"]",
-                "preferredSelector": "querySelector"
-            }
-        },
-        {
-            "action": "screenshot",
-            "options": {
-                "fullPage": false,
-                "fileName": "screen"
-            }
-        }
-    ]});
+      },
+    ],
+  });
 })();

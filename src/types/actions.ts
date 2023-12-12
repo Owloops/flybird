@@ -273,10 +273,13 @@ export interface GetAllActionType {
 
 interface EnterActionType {
   action: 'enter';
+  options: {}
 }
 interface TabActionType {
   action: 'tab';
+  options: {}
 }
 interface SolveCaptchaActionType {
   action: 'solve-captcha';
+  options: {}
 }

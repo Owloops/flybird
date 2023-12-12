@@ -36,6 +36,7 @@ export const owl = async ({
   birdActions = [],
   finalResults = {},
   birdCredits = {},
+  speed = "slow",
   logger = localLogger,
   variables = {},
   chromium,
@@ -49,6 +50,7 @@ export const owl = async ({
   birdActions?: any;
   finalResults?: any;
   birdCredits?: { [x: string]: number };
+  speed?: string;
   logger?: (
     action: string,
     message: string,
@@ -66,6 +68,24 @@ export const owl = async ({
   const birdData = { skeleton: actions };
   const { injectedBird } = prepareBird(birdData, variables);
   validateBird(injectedBird, birdActionsData);
+
+  let slowMo;
+  switch (speed) {
+    case "normal":
+      slowMo = 0;
+      break;
+    case "slow":
+      slowMo = 100;
+      break;
+    case "very slow":
+      slowMo = 250;
+      break;
+    case "extremely slow":
+      slowMo = 500;
+      break;
+    default:
+      slowMo = 0;
+  }
 
   let chromiumArgs = [
     "--no-sandbox",
@@ -123,6 +143,7 @@ export const owl = async ({
       defaultViewport: chromiumViewPort,
       executablePath: chromiumBin,
       headless,
+      slowMo
     });
 
     page = await browser.newPage();
