@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Owloops/flybird/compare/v1.2.0...v1.2.1) (2023-12-12)
+
+
+### Bug Fixes
+
+* slowest cases ([5ff6135](https://github.com/Owloops/flybird/commit/5ff61353cac3814f32d082e90ae95e25744cd0a8))
+
 # [1.2.0](https://github.com/Owloops/flybird/compare/v1.1.21...v1.2.0) (2023-12-12)
 
 
