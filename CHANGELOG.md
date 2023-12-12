@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Owloops/flybird/compare/v1.1.21...v1.2.0) (2023-12-12)
+
+
+### Features
+
+* slowmo ([0891d8c](https://github.com/Owloops/flybird/commit/0891d8c3ea5bc3fd97d3b6d2fcfbbe65f1609d3f))
+
 ## [1.1.21](https://github.com/Owloops/flybird/compare/v1.1.20...v1.1.21) (2023-12-05)
 
 
