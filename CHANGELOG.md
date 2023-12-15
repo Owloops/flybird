@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/Owloops/flybird/compare/v1.2.3...v1.2.4) (2023-12-15)
+
+
+### Bug Fixes
+
+* added missing pierceSelector in schema ([e453ca4](https://github.com/Owloops/flybird/commit/e453ca4f44fa612c3d206977f949ef03a933f48f))
+
 ## [1.2.3](https://github.com/Owloops/flybird/compare/v1.2.2...v1.2.3) (2023-12-15)
 
 
