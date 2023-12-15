@@ -1825,7 +1825,7 @@ export const birdActionsData = [
                     ],
                     "type": "string",
                     "title": "PreferredSelector",
-                    "pattern": "^(?:querySelector|ariaSelector|xpathSelector|textSelextor)$",
+                    "pattern": "^(?:querySelector|ariaSelector|xpathSelector|textSelextor|pierceSelector)$",
                     "description": "PreferredSelector of the input field"
                 }
             },
