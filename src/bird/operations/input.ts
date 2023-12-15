@@ -61,6 +61,12 @@ export const a_input = async (
       selectors.push([options.textSelector]);
     }
   }
+  if (options.pierceSelector) {
+    // @ts-ignore
+    if (options.pierceSelector !== selectors[0][0]) {
+      selectors.push([options.pierceSelector]);
+    }
+  }
   await scrollIntoViewIfNeeded(
     selectors,
     page,

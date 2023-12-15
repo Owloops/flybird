@@ -1800,6 +1800,11 @@ export const birdActionsData = [
                     "title": "TextSelector",
                     "description": "TextSelector of the element to click on"
                 },
+                "pierceSelector": {
+                    "type": "string",
+                    "title": "PierceSelector",
+                    "description": "PierceSelector of the element to click on"
+                },
                 "querySelector": {
                     "type": "string",
                     "title": "QuerySelector",
@@ -1815,7 +1820,8 @@ export const birdActionsData = [
                         "querySelector",
                         "ariaSelector",
                         "xpathSelector",
-                        "textSelector"
+                        "textSelector",
+                        "pierceSelector"
                     ],
                     "type": "string",
                     "title": "PreferredSelector",
@@ -1897,6 +1903,11 @@ export const birdActionsData = [
                     "title": "TextSelector",
                     "description": "TextSelector of the input field"
                 },
+                "pierceSelector": {
+                    "type": "string",
+                    "title": "PierceSelector",
+                    "description": "PierceSelector of the input field"
+                },
                 "querySelector": {
                     "type": "string",
                     "title": "QuerySelector",
@@ -1917,11 +1928,12 @@ export const birdActionsData = [
                         "querySelector",
                         "ariaSelector",
                         "xpathSelector",
-                        "textSelector"
+                        "textSelector",
+                        "pierceSelector"
                     ],
                     "type": "string",
                     "title": "PreferredSelector",
-                    "pattern": "^(?:querySelector|ariaSelector|xpathSelector|textSelector)$",
+                    "pattern": "^(?:querySelector|ariaSelector|xpathSelector|textSelector|pierceSelector)$",
                     "description": "PreferredSelector of the input field"
                 }
             },

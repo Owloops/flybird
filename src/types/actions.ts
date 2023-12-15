@@ -212,6 +212,7 @@ export interface InputActionType {
     ariaSelector?: string;
     xpathSelector?: string;
     textSelector?: string;
+    pierceSelector?: string;
     value?: string;
     delay?: string;
     encrypt?: boolean;
@@ -227,6 +228,7 @@ export interface ClickActionType {
     ariaSelector?: string;
     xpathSelector?: string;
     textSelector?: string;
+    pierceSelector?: string;
     offsetX?: number;
     offsetY?: number;
     rightClick?: boolean;
