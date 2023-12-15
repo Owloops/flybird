@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/Owloops/flybird/compare/v1.2.2...v1.2.3) (2023-12-15)
+
+
+### Bug Fixes
+
+* add pierce selector ([184e776](https://github.com/Owloops/flybird/commit/184e77644ef3838b7feea51eaf8d316ff830334a))
+
 ## [1.2.2](https://github.com/Owloops/flybird/compare/v1.2.1...v1.2.2) (2023-12-12)
 
 
