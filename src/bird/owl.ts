@@ -39,6 +39,7 @@ export const owl = async ({
   speed = "slow",
   logger = localLogger,
   variables = {},
+  maxFlyTime = 120 * 1000, // 2 minutes
   chromium,
 }: {
   puppeteer: PuppeteerNode | PuppeteerExtra | any;
@@ -59,6 +60,7 @@ export const owl = async ({
     birdCredits?: { [x: string]: number }
   ) => any;
   variables?: {};
+  maxFlyTime?: number;
   chromium?: {
     executablePath: (input?: string) => Promise<string>;
     args: string[];
@@ -202,7 +204,6 @@ export const owl = async ({
   }
 
   recaptcha.onPageCreated(page as any);
-  const maxFlyTime = 300 * 1000; // 5 minutes
   const flyResults = await asyncCallWithTimeout(fly({
     page,
     auth,
